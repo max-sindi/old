@@ -90,22 +90,23 @@ gulp.task('sass:watch', function () {
 });
 
 
-gulp.task('concat:js', function () {
-  return gulp.src(['./app/js/modules/*.js', 
+gulp.task('js:concat', function () {
+  return gulp.src([
         './app/libs/jquery.UISlider/jquery.ui-slider.js',
-        './app/libs/owl-carousel/owl.carousel.min.js'])
+        './app/libs/owl-carousel/owl.carousel.min.js',
+        './app/js/modules/jscript.js',
+        './app/js/modules/jquery.formstyler.min.js',
+        ])
     .pipe(concat('all.js'))
     .pipe(gulp.dest('./app/js/'));
 });
 
 
-gulp.task('compress:js', function (cb) {
+gulp.task('js:compress', function () {
   pump([
         gulp.src('./app/js/all.js')
         .pipe(rename("all.min.js")),
         uglify(),
         gulp.dest('./app/js/')
-    ],
-    cb
-  );
+    ]);
 });
