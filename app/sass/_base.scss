@@ -1,0 +1,83 @@
+
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+body {
+    min-width: 300px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    box-sizing: border-box;
+    width: 100%;
+    font: 300 14px/1 $open-sans;
+    color: #5a5c5d;
+}
+strong, b {
+    font-weight: 700;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 32px;
+    line-height: 1.7143;
+}
+span {
+    line-height: 1.7143;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+section {
+    padding: (126rem/16) 15px (127rem/16);
+}
+ul, li, ol {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+hr {
+    margin: 0 auto;
+    border-left: none;
+    border-right: none;
+    box-sizing: border-box;
+}
+figure {
+    margin: 0;
+}
+.display-block {
+    display: block !important;
+}
+.display-none {
+    display: none !important;
+}
+.clearfix {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+.underlined {
+    text-decoration: underline;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}

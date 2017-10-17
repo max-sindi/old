@@ -1,0 +1,5 @@
+app.zip
+.sass-cache
+git
+node_modules
+package-lock.json

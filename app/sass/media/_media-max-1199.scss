@@ -1,0 +1,88 @@
+
+@media (max-width: 1199px) {
+  .our-advances.left-content {
+    .chess-content-wp {
+      padding-right: 30px;
+    }
+  }
+    .how-work-item {
+        max-width: 50%;
+    }
+    .how-work-main {
+        flex-wrap: wrap;
+    }
+    .how-work-item-2 {
+        .how-work-item-2-1 .borders {
+            &:after {
+                display: none;
+            }
+        }
+    }
+    .about-us-main-wp {
+        padding-left: 20px;
+    }
+    .contacts {
+        background-color: #393a3b;
+        background-image: none;
+        .wrapper-big {
+            flex-wrap: wrap;
+            > div {
+                width: 50%;
+                max-width: 50%;
+            }
+        }
+    }
+    .bottom-block {
+        max-width: 100%;
+        text-align: center;
+    }
+    .bottom-social-block {
+        position: static;
+    }
+    .all-rights {
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    .work-groups {
+        .chess-content-wp {
+            padding-right: 30px;
+        }
+    }
+    .our-advances {
+        .chess-img-wp {
+            display: none;
+        }
+        .chess-content-wp {
+            width: 100%;
+            padding-left: 30px;
+            &:after, &:before {
+              display: none;
+            }
+        }
+        .chess-main {
+            float: none;
+            margin-right: auto;
+            margin-left: auto;
+            padding-left: 35px;
+        }
+    }
+    .all-world {
+      .item {
+        font-size: 6px;
+      }
+    }
+}
+@media (min-width: 1199px) {
+  .all-world .wrapper {
+      max-width: 1370px;
+  }
+  .can-help .wrapper {
+    max-width: 1370px;
+  }
+  .prof-translate-include {
+    .wrapper {
+      max-width: 1040px;
+    }
+  }
+}

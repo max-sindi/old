@@ -1,0 +1,230 @@
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.21);
+}
+.header-top-line {
+    min-height: 50px;
+    @include clearfix;
+}
+.header-social-wp {
+    float: left;
+}
+.header-social-list {
+    @include flexbox;
+    height: 50px;
+    align-items: center;
+}
+.header-social-icon {
+    margin-right: 31px;
+    color: #959595;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.header-top-connection {
+    float: right;
+    @include flexbox;
+    min-height: 50px;
+    align-items: center;
+    color: #8a8c8b;
+    font-weight: 600;
+    .fa {
+        vertical-align: baseline;
+    }
+    .fa-angle-down {
+        padding-left: 9px;
+        cursor: pointer;
+    }
+    .fa-phone {
+        padding-right: 8px;
+        color: $main-blue;
+    }
+    .dropdown-menu {
+        right: -8px;
+        left: auto;
+        top: 0;
+        text-transform: uppercase;
+        line-height: 40px;
+        color: #8a8c8b;
+    }
+}
+.dropdown-menu {
+    position: absolute;
+    z-index: 10;
+    top: 40px;
+    color: #8e9091;
+    text-align: left;
+    &-bg {
+        box-sizing: border-box;
+        padding: 30px;
+        background-color: #fff;
+        border: 1px solid #eae8e8;
+        @include border-radius(26px);
+        -webkit-box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.09);
+        -moz-box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.09);
+        box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.09);
+    }
+}
+.nav-about-service +.dropdown-menu {
+  left: -48px;
+}
+.nav-services +.dropdown-menu {
+  left: -72px;
+}
+.nav-languages +.dropdown-menu {
+  left: -80px;
+}
+.nav-specializations +.dropdown-menu {
+  left: -80px;
+}
+.nav-cooperation +.dropdown-menu {
+  left: -24px;
+}
+.header-lang-change {
+    .dropdown-menu {
+        padding-top: 25px;
+    }
+}
+.header-phone {
+    position: relative;
+    margin-right: 34px;
+    padding-left: 12px;
+    padding-right: 11px;
+    .dropdown-menu {
+        padding-top: 22px;
+        right: 0;
+    }
+}
+.header-lang-change {
+    position: relative;
+}
+.header-bot-line {
+    @include clearfix;
+}
+.header-logo-wp {
+    max-width: 227px;
+    float: left;
+    padding: 25px 0;
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+.header-nav {
+    position: relative;
+    padding-top: 34px;
+    text-align: right;
+    float: right;
+}
+.header-nav-item {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    font-size: 12px;
+    color: #fff;
+    &:last-child {
+        padding-right: 0;
+    }
+    .dropdown-list {
+      li {
+        margin-bottom: 18px;
+        font-weight: 400;
+        white-space: nowrap;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+}
+.header-nav-link {
+        position: relative;
+        display: inline-block;
+        text-transform: uppercase;
+        font-weight: 600;
+        &:after {
+            content: '';
+            width: 0;
+            height: 0;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -8px;
+            margin: auto;
+            border-bottom: 1px solid #00aaff;
+            transition: width 0.3s;
+        }
+    }
+.dropdown-nav-btn {
+    position: absolute;
+    display: none;
+    top: 25px;
+    right: 0;
+    width: 30px;
+    padding: 8px;
+    background-color: $main-blue;
+    transition: background-color 0.25s;
+    cursor: pointer;
+    @include border-radius(2px);
+    > span {
+        width: 100%;
+        height: 3px;
+        display: block;
+        margin-bottom: 7px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        background-color: #fff;
+    }
+}
+@media (max-width: 1100px) {
+    .header-nav-list {
+        display: none;
+    }
+    .dropdown-nav-btn {
+        display: block;
+    }
+    .header-nav-list {
+        position: absolute;
+        right: 0;
+        top: 84px;
+        z-index: 10;
+        box-sizing: border-box;
+        padding: 30px;
+        background-color: #fff;
+        border: 1px solid #eae8e8;
+        @include border-radius(26px);
+        -webkit-box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.09);
+        -moz-box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.09);
+        box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.09);
+        text-align: left;
+    }
+    .header-nav-item {
+        display: block;
+        color: #8a8c8b;
+        padding: 0 0 18px 0;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .dropdown-menu {
+            top: 22px;
+            right: 100px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .header-social-wp {
+        float: none;
+        text-align: center;
+    }
+    .header-social-list {
+        justify-content: center;
+    }
+    .header-top-connection {
+        float: none;
+        justify-content: center;
+    }
+}

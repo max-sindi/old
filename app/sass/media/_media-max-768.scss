@@ -1,0 +1,73 @@
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+    .main-top-carousel {
+      .item {
+        font-size: 10px;
+      }
+    }
+    .how-work-item {
+        max-width: 100%;
+    }
+    .how-work-item-2 {
+        .how-work-item-2-1 .borders {
+            &:before {
+                display: none;
+            }
+        }
+    }
+    .about-us {
+        background: #f9fafa;
+        &-detail {
+            text-align: center;
+        }
+    }
+    .about-us-main-wp {
+        width: 100%;
+    }
+    .post-preview {
+        flex-wrap: wrap;
+    }
+    .comments-page {
+        .comment-content {
+            padding-left: 0;
+            padding-top: 130px;
+        }
+        .item {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+    .special-offer {
+      flex-wrap: wrap;
+      > div {
+        width: 100%;
+      }
+      .content-block {
+        &:after {
+          @include transform( translate(50%, 50%) rotate(90deg) );
+          right: 50%;
+          top: auto;
+          bottom: -24px;
+        }
+      }
+      .picture-block  {
+        > img {
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+      }
+    }
+    .question-category {
+        .item {
+          width: 100%;
+        }
+      }
+    .leave-comment {
+      .inputs-wp {
+        max-width: 290px;
+      }
+    }
+}

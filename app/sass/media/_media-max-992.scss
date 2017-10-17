@@ -1,0 +1,89 @@
+
+@media (max-width: 992px) {
+  .main-top-carousel {
+    .owl-pagination {
+      bottom: 10px;
+    }
+    .item {
+      padding-top: 120px;
+      padding-bottom: 30px;
+    }
+  }
+    .right-content {
+        .chess-content-wp {
+            padding: 60px 30px 60px 70px;
+        }
+    }
+    .our-advances {
+        .chess-content-wp {
+            padding-left: 30px;
+        }
+    }
+    .prof-eng-translate {
+        .chess-content-wp {
+            padding-right: 80px;
+        }
+        .heading {
+            font-size: (26rem/16);
+        }
+    }
+    .main .wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        .l-strip {
+            margin-bottom: 60px;
+        }
+        .category, .archive {
+            text-align: center;
+        }
+        .article-single {
+            margin-bottom: 60px;
+            padding-right: 15px;
+        }
+    }
+    .all-world {
+      .heading {
+        margin-bottom: 150px;
+      }
+      .content {
+        margin-bottom: -62px;
+      }
+      .item {
+        width: 100%;
+        margin-bottom: 62px;
+        font-size: 4px;
+        &:nth-child(3) {
+          padding-left: (233em/16);
+        }
+        &:nth-child(4) {
+          padding-right: (131em/16);
+        }
+      }
+    }
+    .answer-main {
+        max-width: (580px);
+    }
+    .question-category {
+        .item {
+          width: calc(50% - 30px);
+        }
+      }
+    .questions {
+      .questions-column {
+        float: none;
+        width: 100%;
+        margin: 0;
+        .item {
+          margin-right: auto;
+          margin-left: auto;
+        }
+      }
+    }
+    .leave-comment {
+      .inputs-wp {
+          flex-wrap: wrap;
+          max-width: 580px;
+        }
+
+    }
+}

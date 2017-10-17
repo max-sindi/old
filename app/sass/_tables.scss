@@ -1,0 +1,370 @@
+
+
+// common table styles
+.price-table-wp {
+  width: 100%;
+  overflow-x: auto;
+}
+.price-table {
+  color: #5a5c5d;
+  font-weight: 300;
+  font-size: 14px;
+  background-color: transparent;
+  @include border-radius(26px);
+  border-spacing: 0;
+  width: 1010px;
+
+  //header
+  th {
+    height: 60px;
+    font-size: 12px;
+    color: #949292;
+    line-height: 1.7;
+    text-transform: uppercase;
+    text-align: left;
+    background-color: #fdfdfd;
+    font-weight: 600;
+    border-top: 1px solid #eae8e8;
+    border-bottom: 1px solid #f6f6f6;
+    &:first-child {
+      padding-left: 60px;
+      border-top-left-radius: 26px;
+      border-left: 1px solid #eae8e8;
+    }
+    &:last-child {
+      border-top-right-radius: 26px;
+      border-right: 1px solid #eae8e8;
+    }
+  }
+  tr {
+    td, th {
+      @include box-sizing;
+    }
+
+    td {
+      height: 67px;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      line-height: (16/14);
+      color: #5a5c5d;
+      background-color: #fff;
+      border-top: 1px solid transparent;
+      border-bottom: 1px solid transparent;
+
+      // left column
+      &:first-child {
+        position: relative;
+        padding-left: 60px;
+        border-left: 1px solid #eae8e8;
+        &:before {
+          content: '';
+          width: 890px;
+          bottom: 0;
+          left: 60px;
+          border-top: 1px solid #f6f6f6;
+          background-color: transparent;
+          position: absolute;
+          margin-bottom: -2px;
+          z-index: 2;
+        }
+      }
+
+      // right column
+      &:last-child {
+        border-right: 1px solid #eae8e8;
+      }
+    }
+
+
+    // bottom empty row
+    &:last-child {
+      td {
+        border-bottom: 1px solid #eae8e8;
+        height: 20px;
+        padding: 0;
+        &:first-child {
+          border-bottom-left-radius: 26px;
+          border-left: 1px solid #eae8e8;
+          &:before {
+            display: none;
+          }
+        }
+        &:last-child {
+          border-bottom-right-radius: 26px;
+          border-right: 1px solid #eae8e8;
+        }
+      }
+    }
+  }
+  .td-order > a {
+    font-size: 12px;
+    color: #919293;
+    font-weight: 400;
+  }
+  .cell-flag {
+    position: absolute;
+    left: 60px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 40px;
+    max-height: 27px;
+    vertical-align: middle;
+  }
+  .lang-name {
+    position: relative;
+    top: 3px;
+    vertical-align: middle;
+  }
+}
+
+// specific tables
+.price {
+  .price-table {
+    tr {
+      th {
+        height: 94px;
+        padding-top: 7px;
+        padding-right: 5px;
+      }
+      td {
+        height: 70px;
+      }
+      td, th {
+        &:first-child {
+          min-width: 425px;
+          padding-right: 95px;
+        }
+        &:nth-child(2) {
+          min-width: 210px;
+          padding-right: 89px;
+        }
+        &:nth-child(3) {
+          min-width: 210px;
+          padding-right: 89px;
+        }
+        &:last-child {
+          min-width: 165px;
+          padding-right: 20px;
+        }
+      }
+
+    }
+  }
+}
+.cost {
+  .price-table {
+    th {
+      height: 68px;
+      &:nth-child(2) {
+        padding-left: 5px;
+      }
+      &:nth-child(3) {
+        padding-left: 3px;
+      }
+    }
+    td {
+      padding-top: 12px;
+      padding-bottom: 13px;
+    }
+  }
+}
+
+.texts-translate {
+  .price-table {
+    tr {
+      th {
+        &:first-child {
+          padding-left: 60px;
+        }
+        &:nth-child(2) {
+          padding-left: 5px;
+        }
+        &:nth-child(3) {
+          padding-left: 3px;
+        }
+      }
+      td {
+        &:first-child {
+          padding-left: 120px;
+        }
+      }
+      th, td {
+        &:first-child {
+          min-width: 375px;
+        }
+        &:nth-child(2) {
+          min-width: 230px;
+          padding-right: 10px;
+        }
+        &:nth-child(3) {
+          min-width: 230px;
+          padding-right: 10px;
+        }
+        &:last-child {
+          min-width: 175px;
+          padding-right: 60px;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+.standart-translate {
+  .price-table {
+    tr {
+      td, th {
+        padding-right: 15px;
+        &:first-child {
+          min-width: 380px;
+        }
+        &:nth-child(2) {
+          min-width: 165px;
+        }
+        &:nth-child(3) {
+          min-width: 300px;
+        }
+        &:last-child {
+          min-width: 165px;
+        }
+      }
+    }
+    td {
+      background-color: #fdfdfd;
+      &:first-child {
+        padding-left: 120px;
+      }
+    }
+  }
+  th {
+    background-color: #fff;
+    &:first-child {
+      padding-left: 60px;
+    }
+  }
+}
+.apostil .price-table {
+    tr {
+      td, th {
+        &:first-child {
+          width: 533px;
+          padding-right: 120px;
+        }
+        &:nth-child(2) {
+          width: 140px;
+        }
+        &:nth-child(3) {
+          width: 180px;
+        }
+        &:last-child {
+          width: 157px;
+        }
+      }
+      td {
+        &:first-child {
+          padding-left: 120px;
+        }
+      }
+      th {
+        &:first-child {
+          padding-left: 60px;
+        }
+      }
+    }
+  }
+  .cell-color-figure {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 60px;
+    @include flexbox;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    @include border-radius(50%);
+    border: 2px solid transparent;
+    font-weight: 700;
+    &.nth-1 {
+      border-color: $main-blue;
+      color: $main-blue;
+    }
+    &.nth-2 {
+      border-color: #00c3ca;
+      color: #05c4cb;
+    }
+    &.nth-3 {
+      border-color: #00ca85;
+      color: #00ca85;
+    }
+    &.nth-4 {
+      border-color: #e0dd00;
+      color: #e0dd00;
+    }
+    &.nth-5 {
+      border-color: #fb4e4e;
+      color: #fb4e4e;
+    }
+  }
+.cost-additional-services {
+  .price-table {
+    tr {
+      th:first-child {
+        padding-left: 60px;
+      }
+      td, th {
+        &:first-child {
+          width: 505px;
+        }
+        &:nth-child(2) {
+          width: 350px;
+        }
+        &:last-child {
+          width: 155px;
+        }
+      }
+      td {
+        padding-top: 15px;
+        padding-bottom: 12px;
+      }
+      td:first-child {
+        padding-left: 90px;
+        .fa {
+          position: absolute;
+          left: 60px;
+          top: 0;
+          bottom: 2px;
+          margin: auto;
+          width: 11px;
+          height: 11px;
+        }
+        &.nth-1 {
+          .fa {
+            color: $main-blue;
+          }
+        }
+        &.nth-2 {
+          .fa {
+            color: #00c3ca;
+          }
+        }
+        &.nth-3 {
+          .fa {
+            color: #00ca85;
+          }
+        }
+        &.nth-4 {
+          .fa {
+            color: #e0dd00;
+          }
+        }
+      }
+    }
+  }
+}
+
+// much priority for static value
+.price-table-wp table.price-table tr:last-child td {
+  height: 20px;
+}

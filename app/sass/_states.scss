@@ -1,0 +1,211 @@
+.header-social-link:hover {
+    color: $main-blue;
+}
+.lang-change-item a:hover, .phone-change-item a:hover {
+    color: $main-blue;
+}
+.header-phone-change-link:hover {
+    text-decoration: underline;
+}
+.header-nav-item a:hover {
+        color: #00aaff;
+}
+.header-nav-item:hover {
+  .header-nav-link {
+    color: $main-blue;
+    &:after {
+        width: 22px;
+    }
+  }
+}
+.main-page {
+  .nav-main:after {
+    width: 22px;
+  }
+}
+.services-active {
+  .nav-services:after {
+    width: 22px;
+  }
+}
+.languages-active {
+  .nav-languages:after {
+    width: 22px;
+  }
+}
+.about-service-active {
+  .nav-about-service:after {
+    width: 22px;
+  }
+}
+.contacts-active {
+  .nav-contacts:after {
+    width: 22px;
+  }
+}
+.cooperation-active {
+  .nav-cooperation:after {
+    width: 22px;
+  }
+}
+.specilizations-active {
+  .nav-specializations:after {
+    width: 22px;
+  }
+}
+.dropdown-nav-btn:hover {
+    background-color: $btn-hover;
+}
+.main-top-banner {
+  .learn-more:hover {
+      background-color: $btn-hover;
+  }
+}
+.blue-button:hover {
+    background-color: #0096e0;
+}
+.can-help {
+  .item:hover {
+    .img-capt {
+      text-decoration: underline;
+      color: $main-blue;
+    }
+  }
+}
+.recent-posts {
+  .item:hover {
+    .description {
+      color: darken($main-blue, 10%);
+    }
+  }
+}
+.spec-item-main-wp:hover {
+    background-color: rgba(66, 116, 230, 0.2);
+    .spec-item-main {
+        border-color: #fff;
+    }
+}
+.post-read-more:hover {
+    text-decoration: underline;
+}
+.blue-btn:hover {
+    background-color: $btn-hover;
+}
+.bottom-list-item a:hover {
+    text-decoration: underline;
+}
+.bottom-socials > a:hover {
+    color: #0af;
+}
+.up:hover {
+  background-color: lighten(#393a3b, 1%);
+}
+.contacts-item-single:hover .contacts-item {
+    border-color: rgba(68, 140, 203, 0.43);
+}
+.contacts-item-single:hover {
+    z-index: 10;
+    @include box-shadow(9px 10px 10px 10px rgba(0, 0, 0, 0.1));
+}
+.breadcrumbs-link:hover {
+    text-decoration: underline;
+}
+.spec-arrow:hover {
+    opacity: 0.8;
+}
+.price-table {
+    tr:hover {
+
+        td {
+            background-color: #fdfdfd;
+            border-top: 1px solid #f6f6f6;
+            border-bottom: 1px solid #f6f6f6;
+            &:first-child:before {
+                display: none;
+            }
+            &:first-child {
+              border-left: 1px solid #f6f6f6;
+            }
+            &:last-child {
+              border-right: 1px solid #f6f6f6;
+            }
+        }
+        &:last-child {
+            td {
+              border-bottom: 1px solid #eae8e8;
+              border-top: 1px solid transparent;
+              background-color: #fff;
+              &:first-child {
+                border-left: 1px solid #eae8e8;
+              }
+              &:last-child {
+                border-right: 1px solid #eae8e8;
+              }
+            }
+        }
+    }
+}
+.td-order a:hover {
+  color: $main-blue;
+  text-decoration: underline;
+}
+.standart-translate {
+  .price-table {
+    tr {
+      &:hover {
+        td {
+          background-color: #fff;
+        }
+      }
+      &:last-child:hover {
+        td {
+          background-color: #fdfdfd;
+        }
+      }
+    }
+  }
+}
+
+.side-list a:hover {
+    color: #0087ca;
+}
+.pag-item-link {
+        &.active {
+            background-color: $main-blue;
+            color: #fff;
+            border-color: $main-blue;
+            &:hover {
+                background-color: $main-blue;
+                color: #fff;
+                border-color: $main-blue;
+                cursor: default;
+            }
+        }
+    &:hover {
+        background-color: #d3e5ff;
+        border-color: #bad6ff;
+        color: $main-blue;
+    }
+}
+.article-single .share-list > li > a:hover {
+    color: #0af;
+}
+.question-category {
+    .item:hover  {
+        background-color: $main-blue;
+        color: #fff;
+    }
+}
+.carousel {
+  .item:hover .item-content-wp {
+    background-color: rgba(66, 116, 230, 0.2);
+    .item-content {
+      border: 2px solid #fff;
+    }
+  }
+}
+.special-offer {
+  .order-button:hover {
+    background-color: #0096e0;
+  }
+}

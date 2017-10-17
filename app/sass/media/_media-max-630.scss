@@ -1,0 +1,98 @@
+
+@media (max-width: 630px) {
+    .contacts {
+        .wrapper-big {
+            > div {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+        &-description {
+            padding-right: 30px;
+            text-align: center;
+        }
+    }
+    .chess-img-wp {
+        display: none;
+    }
+    .can-help {
+      .item {
+        margin: 0 auto 60px;
+      }
+    }
+    .include-block {
+      .chess-main {
+        padding-left: 0;
+      }
+      .item {
+        padding-top: 35px;
+        padding-right: 0;
+        padding-left: 0;
+        text-align: center;
+        font-size: 16px;
+        &:before {
+          right: 0;
+          margin: auto;
+        }
+        .title {
+          max-width: 100%;
+          padding-bottom: 20px;
+        }
+      }
+    }
+    .chess-content-wp {
+      width: 100%;
+      &:after, &:before {
+        display: none;
+      }
+    }
+    .right-content {
+        .chess-content-wp {
+            padding: 60px 30px;
+        }
+    }
+    .left-content {
+        .chess-content-wp {
+            padding: 60px 30px;
+        }
+    }
+    .article-single {
+        .comment-avatar-wp {
+
+        }
+        .comment-content {
+            padding-top: 8.125rem;
+            padding-left: 1.1875rem;
+        }
+        .comment-level {
+            padding-left: (50rem/16);
+        }
+        .post-leave-comment {
+            .row {
+                margin: 0;
+            }
+            .input {
+                width: 100%;
+                margin-right: 0;
+                margin-left: 0;
+            }
+        }
+    }
+    .comments-page {
+        .result-figure {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .comment-rate {
+            padding-left: 0;
+        }
+    }
+    .directions {
+      .item {
+        width: 100%;
+      }
+    }
+    .answer-main {
+        max-width: (290px);
+    }
+}

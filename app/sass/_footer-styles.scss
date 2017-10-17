@@ -1,0 +1,134 @@
+.bottom {
+    position: relative;
+    padding: 60px 0 105px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #dfdfdf;
+    background-color: #393a3b;
+    .wrapper-big {
+        position: relative;
+        @include flexbox;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: -40px;
+    }
+    &-block {
+        width: 100%;
+        margin-bottom: 40px;
+        flex-grow: 1;
+    }
+    &-unona {
+        max-width: 235px;
+    }
+    &-about-service {
+        max-width: 240px;
+    }
+    &-services {
+        max-width: 267px;
+    }
+    &-languages {
+        max-width: 280px;
+    }
+    &-specs {
+        max-width: 212px;
+    }
+    &-list-heading {
+        margin-bottom: 30px;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    &-list-item {
+        line-height: 28px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    &-adress {
+        img {
+            margin-right: 15px;
+        }
+    }
+    &-phone {
+        img {
+            margin-right: 12px;
+        }
+    }
+    &-mail {
+        img {
+            margin-right: 15px;
+        }
+    }
+    &-social-block {
+        position: relative;
+        padding-top: 33px;
+    }
+    &-socials {
+       > a {
+            margin-right: 28px;
+           font-size: 15px;
+           color: #cfcece;
+           &:last-child {
+               margin-right: 0;
+           }
+        }
+    }
+}
+.bottom-contacts {
+    max-width: 300px;
+    .bottom-list-item {
+      font-family: $helvet;
+      font-weight: 300;
+      > a {
+      vertical-align: middle;
+      }
+    }
+}
+.bottom-contact {
+  position: relative;
+  padding-left: 34px;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../img/icons/bottom-sprite.png');
+  }
+  &.bottom-png-1 {
+    &:before {
+      background-position: -25px -71px;
+      width: 16px;
+      height: 20px;
+    }
+  }
+  &.bottom-png-2 {
+    &:before {
+        background-position: -2px -54px;
+        width: 21px;
+        height: 22px;
+      }
+  }
+  &.bottom-png-3 {
+    &:before {
+      background-position: -25px -54px;
+      width: 19px;
+      height: 15px;
+    }
+  }
+}
+.all-rights {
+    position: absolute;
+    bottom: -30px;
+    font-size: 11px;
+    color: #a3a5a6;
+}
+.up {
+    position: absolute;
+    display: inline-block;
+    right: 25px;
+    top: 66px;
+    width: 52px;
+    height: 52px;
+    @include border-radius(50%);
+    background: url('../img/icons/up.png') no-repeat;
+}

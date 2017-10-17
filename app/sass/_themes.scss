@@ -1,0 +1,172 @@
+.main-top-banner {
+  background: url('../img/themes/main-top-banner-1.png') $centbg;
+  .item {
+    background:  $centbg;
+  }
+  .item.nth-1 {
+      background-image: url('../img/themes/main-top-banner-1.png');
+  }
+  .item.nth-2 {
+      background-image: url('../img/themes/main-top-banner-2.png');
+  }
+  .item.nth-3 {
+      background-image: url('../img/themes/main-top-banner-3.png');
+  }
+  .item.nth-4 {
+      background-image: url('../img/themes/main-top-banner-4.png');
+  }
+  .item.nth-5 {
+      background-image: url('../img/themes/main-top-banner-5.png');
+  }
+  .item.nth-6 {
+      background-image: url('../img/themes/main-top-banner-6.png');
+  }
+}
+.take-rate-sect {
+    background: url('../img/take-rate.png') $centbg;
+}
+.order-translate {
+    background: url('../img/order-translate.png') $centbg;
+}
+.left-content {
+    .chess-content-wp {
+        background-position: right center;
+    }
+}
+.chess-content-wp {
+    background-repeat: no-repeat;
+}
+.right-content {
+    .chess-content-wp {
+        background-position: left center;
+    }
+}
+.work-groups {
+    background-color: #424850;
+}
+.grey-right-corner {
+  &:after {
+    background-image: url('../img/themes/grey-right-corner.png');
+  }
+}
+.grey-left-corner {
+    &:before {
+      background-image: url('../img/themes/grey-left-corner.png');
+    }
+}
+.darken-white-left-corner {
+  &:before {
+      background-image: url('../img/themes/darken-white-left-corner.png');
+    }
+}
+.darken-white-right-corner {
+  &:after {
+    background-image: url('../img/themes/darken-white-right-corner.png');
+  }
+}
+.white-right-corner {
+  &:after {
+    background-image: url('../img/themes/white-right-corner.png');
+  }
+}
+.white-left-corner {
+  &:before {
+    background-image: url('../img/themes/white-left-corner.png');
+  }
+}
+.darken-white {
+    background-color: #f9fafa;
+}
+.top-banner {
+    background: $centbg;
+}
+.languages-page .top-banner {
+    background-image: url('../img/themes/lang-banner.png');
+}
+.services-page .top-banner {
+    background-image: url('../img/themes/servcies-banner.png')
+}
+.news-page .top-banner {
+    background-image: url('../img/themes/about-service-banner.png');
+}
+.about-service-blog-page .top-banner {
+    background-image: url('../img/themes/about-service-blog-banner.png');
+}
+.cooperation-page .top-banner {
+    background-image: url('../img/themes/cooperation-banner.png');
+}
+.specializations-page .top-banner {
+    background-image: url('../img/themes/specialization-banner.png');
+}
+.answer-question-page .top-banner {
+    background-image: url('../img/themes/answer-question.png');
+}
+.comments-page .top-banner {
+    background-image: url(../img/themes/comments.png);
+}
+.about-service-page .top-banner {
+  background-image: url('../img/themes/about-service.png');
+}
+.answer, .leave-comment {
+    background: url('../img/answer.png') $centbg;
+}
+.grey-bg {
+    background-color: #414850;
+}
+.price {
+    background-color: #f9fafa;
+}
+.contact-us {
+    background: url('../img/themes/contacts-us.png') $centbg;
+}
+.order-lesson {
+    background: url('../img/themes/order-test-lesson.png') $centbg;
+}
+.additional-services {
+  @extend .darken-white;
+}
+.special-offer-page .top-banner {
+  background-image: url('../img/themes/special-offer.png');
+}
+.contacts-page {
+  .top-banner {
+    background-image: url('../img/themes/contacts.png');
+  }
+  .subscribe {
+    background-image: url('../img/themes/subscribe-white-bg.png');
+  }
+}
+.about-cooperation {
+  background: url('../img/themes/about-cooperation.png') $centbg;
+}
+.standart-translate {
+  background: url('../img/themes/translate-standart.png') $centbg;
+}
+.apostil {
+  background-color: #f9fafa;
+}
+.cost-additional-services {
+  background: url('../img/themes/additional-service.png') $centbg;
+}
+.local-service-include {
+  background-color: $darken-white;
+}
+.localize-take-rate {
+  background-color: $darken-white;
+}
+.main-page {
+  .comments-carousel-sect {
+      background-color: $darken-white;
+  }
+}
+.about-service-page {
+  .comments-carousel-sect {
+    background: url('../img/themes/about-service-comments.png') $centbg;
+  }
+}
+.all-world {
+  background: url('../img/themes/all-world.png') $centbg;
+}
+.discuss-project {
+  background: url('../img/themes/discuss-project.png') $centbg ;
+}

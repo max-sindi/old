@@ -1,0 +1,93 @@
+
+@media (max-width: 450px) {
+    body {
+        padding-top: 100px;
+    }
+    .main-top-carousel .item {
+       height: calc(100vh - 100px);
+    }
+    .header-logo-wp {
+        width: 71%;
+    }
+    .main-help-item {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .comments-carousel {
+        .owl-buttons > div {
+            height: 300px;
+            zoom: 0.8;
+        }
+    }
+    .spec-item {
+        width: calc(100% - 75px);
+    }
+    .subscribe-mail {
+        max-width: 100%;
+        margin-bottom: 30px;
+        padding-right: 46px;
+    }
+    .subscribe-btn {
+        position: relative;
+        width: 100%;
+        height: 52px;
+    }
+    .up {
+        top: 16px;
+    }
+    .carousel {
+      .item-content {
+        font-size: 18px;
+      }
+    }
+    .about-service-page {
+      .all-world {
+        padding-bottom: (127rem/16);
+        .item {
+          padding: 0;
+          text-align: center;
+        }
+      }
+    }
+}
+@media (max-height: 620px) {
+    .header-logo-wp {
+      zoom: 0.8;
+    }
+    .main-top-carousel {
+      .item {
+          padding-bottom: 50px;
+          font-size: 10px;
+      }
+      .heading {
+          margin-bottom: (22em/16);
+      }
+      .link-wp {
+        padding-top: (50em/16);
+      }
+      .owl-pagination {
+        bottom: 10px;
+      }
+      .second-string {
+        font-size: (36em/16);
+      }
+    }
+}
+@media (max-height: 450px) {
+    .main-top-carousel {
+      .item {
+        font-size: 8px;
+      }
+      .learn-more {
+        padding: (20em/16) (52em/16) ;
+        font-size: (16em/16);
+      }
+    }
+}
+@media (max-height: 350px) {
+  .main-top-carousel {
+    .item {
+      height: 100vh;
+    }
+  }
+}

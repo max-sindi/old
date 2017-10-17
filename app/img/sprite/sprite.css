@@ -1,0 +1,19 @@
+
+@mixin sprite-image {
+  background-image: url("../sprite.png");
+}
+@mixin sprite-position($sprite) {
+  background-position: nth($sprite, 1) nth($sprite, 2);
+}
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 3);
+}
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 4);
+}
+@mixin sprite($sprite) {
+  @include sprite-image;
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}

@@ -1,0 +1,118 @@
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin glyph {
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+@mixin border-radius ($values) {
+border-radius: $values;
+-moz-border-radius: $values;
+-webkit-border-radius: $values;
+}
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+@mixin background ($x: 0, $y: 0, $width: 0, $height: 0) {
+    background-position: $x $y;
+    width: $width;
+    height: $height;
+}
+@mixin margin-auto {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+@mixin sprite($x: 0, $y: 0, $width: 0, $height: 0) {
+    background-position: $x $y;
+    width: $width;
+    height: $height;
+}
+@mixin row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+@mixin box-sizing {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+@mixin border-box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@mixin placeholder-color ($color-value) {
+    &::-webkit-input-placeholder {
+        color: $color-value;
+    }
+    &::-moz-placeholder {
+        color: $color-value;
+    }
+    &:-ms-input-placeholder {
+        color: $color-value;
+    }
+    &:-moz-placeholder {
+        color: $color-value;
+    }
+}
+@mixin placeholder-font ($font-value) {
+    &::-webkit-input-placeholder {
+        font: $font-value;
+    }
+    &::-moz-placeholder {
+        font: $font-value;
+    }
+    &:-ms-input-placeholder {
+        font: $font-value;
+    }
+    &:-moz-placeholder {
+        font: $font-value;
+    }
+}
+@mixin transform($value) {
+     -moz-transform: $value;
+    -ms-transform: $value;
+    -webkit-transform: $value;
+    -o-transform: $value;
+    transform: $value;
+}
+@mixin box-shadow($value) {
+    -webkit-box-shadow: $value;
+    -moz-box-shadow: $value;
+    box-shadow: $value;
+}
+@mixin spread() {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@mixin fontAwe {
+  position: absolute;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

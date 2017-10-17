@@ -1,0 +1,128 @@
+/*
+* 	Owl Carousel Owl Demo Theme
+*	v1.3.3
+*/
+
+.owl-theme .owl-controls{
+	text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+
+.owl-prev, .owl-next {
+	color: #3f3f3f;
+	display: inline-block;
+	font-size: 32px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 1;
+    line-height: 20px;
+    position: absolute;
+    height: 310px;
+    top: 0;
+}
+.owl-theme .owl-controls .owl-buttons div i {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+.owl-prev {
+    left: -119px;
+    padding: 20px 20px 20px 20px;
+}
+.owl-next {
+    right: -119px;
+    padding: 20px 20px 20px 20px;
+}
+@media (max-width: 1300px) {
+    .owl-prev {
+        left: -25px;
+    }
+    .owl-next {
+        right: -9px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .owl-prev, .owl-next {
+        height: 275px;
+    }
+}
+@media (max-width: 992px) {
+    .owl-prev, .owl-next {
+        height: 275px;
+    }
+}
+@media (max-width: 768px) {
+    .owl-prev, .owl-next {
+        height: 50vw;
+    }
+    .owl-prev {
+        left: 0;
+    }
+    .owl-next {
+        right: 30px;
+    }
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 0.9;
+}
+
+/* Styling Pagination*/
+.owl-pagination {
+    padding-top: 87px;
+}
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	margin: 0 10px 10px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+    border: 2px solid #3f3f3f;
+	background: transparent;
+}
+.owl-controls .owl-page.active span {
+    background-color: #39944e;
+    border-color: #39944e;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url(AjaxLoader.gif) no-repeat center center
+}
