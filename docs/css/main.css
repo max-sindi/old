@@ -3075,8 +3075,8 @@ figure {
 .main-top-banner {
   position: relative;
   max-height: calc(100vh - 50px);
-  overflow: hidden; }
-  padding: 0;
+  overflow: hidden; 
+  padding: 0; }
   .main-top-banner .item {
     height: 500px;
     height: calc(100vh - 50px);
