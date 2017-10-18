@@ -21,14 +21,12 @@ var bld_rep = './docs';
 gulp.task('css', function () {
 
 	var plugins = [
-		autoprefixer( {browsers: ['last 2 versions']} )
+		autoprefixer( {browsers: ['last 10 versions']} )
 		, cssnano()
 	];
 	return gulp.src(`${bld_rep}/css/main.css`)
-	.pipe(sourcemaps.init())
 	.pipe(postcss(plugins))
-  .pipe(rename('main.min.css') )
-  .pipe(sourcemaps.write('.'))
+  .pipe(rename('main.min.css'))
 	.pipe(gulp.dest(`${bld_rep}/css`));
 
 });

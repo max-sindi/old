@@ -3078,8 +3078,11 @@ figure {
 
 .main-top-banner {
   position: relative;
-  padding: 0; }
+  padding: 0;
+  max-height: calc(100vh - 50px);
+  overflow: hidden; }
   .main-top-banner .item {
+    height: 500px;
     height: calc(100vh - 50px);
     display: -webkit-box;
     display: -moz-box;
