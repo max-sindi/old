@@ -9,11 +9,13 @@ var nsg = require('node-sprite-generator');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var pump = require('pump');
-var rename = require('gulp-rename');
+var rename = require('gulp-rename'),
+    notify = require('gulp-notify'),
+    multipipe = require('multipipe');
 
 const imagemin = require('gulp-imagemin');
 
-
+var bld_rep = './docs';
 
 /* css prefixer, minifier */
 gulp.task('css', function () {
@@ -22,24 +24,15 @@ gulp.task('css', function () {
 		autoprefixer( {browsers: ['last 2 versions']} )
 		, cssnano()
 	];
-	return gulp.src('./app/css/*.css')
+	return gulp.src(`${bld_rep}/css/main.css`)
 	.pipe(sourcemaps.init())
-		.pipe(postcss(plugins))
-	.pipe(sourcemaps.write())
-	.pipe(gulp.dest('./app/css-min'));
+	.pipe(postcss(plugins))
+  .pipe(rename('main.min.css') )
+  .pipe(sourcemaps.write('.'))
+	.pipe(gulp.dest(`${bld_rep}/css`));
 
 });
 
-/*minify img*/
-gulp.task('min-img', () =>
-	gulp.src('./app/img/**/*.png')
-		.pipe(imagemin([
-			imagemin.optipng({optimizationLevel: 5})]
-			, {
-				verbose: true
-			}))
-		.pipe(gulp.dest('./app/img'))
-);
 
 
 /* sprite generate */
@@ -110,3 +103,32 @@ gulp.task('js:compress', function () {
         gulp.dest('./app/js/')
     ]);
 });
+
+/*minify img*/
+gulp.task('min-img', () =>
+  gulp.src(`${bld_rep}/img_uncompressed/**/*.png`)
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 10})]
+      , {
+        verbose: true
+      }))
+    .pipe(gulp.dest('./app/img'))
+);
+
+gulp.task('img', function() {
+  return multipipe(
+          gulp.src ([`${bld_rep}/img/themes/main-top-banner-1.png`,
+                    `${bld_rep}/img/themes/main-top-banner-2.png`,
+                    `${bld_rep}/img/themes/main-top-banner-3.png`,
+                    `${bld_rep}/img/themes/main-top-banner-4.png`,
+                    `${bld_rep}/img/themes/main-top-banner-5.png`,
+                    `${bld_rep}/img/themes/main-top-banner-6.png`]),
+          gulp.dest(`${bld_rep}/img_uncompressed`),
+          imagemin([
+            imagemin.optipng({optimizationLevel: 10})]
+            ,
+             {     verbose: true
+            }),
+          gulp.dest(`${bld_rep}/img`)
+        ).on( 'error', notify.onError() )
+})
