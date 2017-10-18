@@ -406,10 +406,6 @@ template {
   font-weight: 300;
   font-style: normal; }
 
-/*!
- *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
- *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
- */
 @font-face {
   font-family: 'FontAwesome';
   src: url("../fonts/FontAwesome/fontawesome-webfont.eot?v=4.7.0");
@@ -3078,8 +3074,11 @@ figure {
 
 .main-top-banner {
   position: relative;
-  padding: 0; }
+  padding: 0;
+  max-height: calc(100vh - 50px);
+  overflow: hidden; }
   .main-top-banner .item {
+    height: 500px;
     height: calc(100vh - 50px);
     display: -webkit-box;
     display: -moz-box;
@@ -5822,7 +5821,7 @@ body {
   background: url("../img/icons/up.png") no-repeat; }
 
 .main-top-banner {
-  background: url("../img/themes/main-top-banner-1.png") no-repeat center center/cover; }
+  background: #eee url("../img/themes/main-top-banner-1.png") no-repeat center center/cover; }
   .main-top-banner .item {
     background: no-repeat center center/cover; }
   .main-top-banner .item.nth-1 {
